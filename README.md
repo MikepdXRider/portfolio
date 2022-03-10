@@ -17,4 +17,4 @@ A site to highlight my favorite software development projects and practice using
 
 ## Initial Mock
 
-![Initial Mock](./public/initial-mock.jpg)
+![Initial Mock](./public/initial-mock.JPG)
