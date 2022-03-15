@@ -15,12 +15,17 @@ export default function Section({
 }: SectionProps) {
   return (
     <section
-      className={`${darkMode ? styles.darkSection : styles.lightSection} ${
-        styles.section
-      }`}
+      aria-label={`${title && title} section`}
+      className={`${
+        darkMode ? styles.darkModeSection : styles.lightModeSection
+      } ${styles.section}`}
     >
       {title && (
-        <h2 className={`${darkMode && styles.darkTitle} ${styles.title}`}>
+        <h2
+          className={`${
+            darkMode ? styles.darkModeTitle : styles.lightModeTitle
+          } ${styles.title}`}
+        >
           {title}
         </h2>
       )}

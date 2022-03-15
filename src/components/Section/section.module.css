@@ -1,8 +1,10 @@
 :root {
   /* alternatives: hsl(225,7%,22%) | rgb(53,55,61)*/
   --darkslategrey: #35373d;
-  /* alternatives: hsl(0,0%,100%) | rgb(255,255,255)*/
+  /* alternatives: hsl(0,100%,100%) | rgb(255,255,255)*/
   --white: #ffffff;
+  /* alternatives: hsl(0,0%,100%) | rgb(0,0,0)*/
+  --black: #000000;
   /* alternatives: hsl(90,58%,56%) | rgb(143,209,79)*/
   --accentgreen: #8fd14f;
 }
@@ -14,11 +16,11 @@
   grid-template-rows: repeat(5, 1fr);
 }
 
-.darkSection {
+.darkModeSection {
   background: var(--darkslategrey);
 }
 
-.lightSection {
+.lightModeSection {
   background: var(--white);
 }
 
@@ -30,6 +32,10 @@
   text-decoration-thickness: 5px;
 }
 
-.darkTitle {
+.darkModeTitle {
   color: var(--white);
+}
+
+.lightModeTitle {
+  color: var(--black);
 }

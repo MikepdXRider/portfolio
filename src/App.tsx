@@ -5,10 +5,10 @@ import Section from './components/Section/Section';
 function App() {
   return (
     <div className="App">
-      <Section title={'Hero'}>
+      <Section title={'Hero'} darkMode={true}>
         <p>Hello World!</p>
       </Section>
-      <Section title={'Hero'} darkMode={true}>
+      <Section title={'About Me'}>
         <p>Hello World!</p>
       </Section>
     </div>

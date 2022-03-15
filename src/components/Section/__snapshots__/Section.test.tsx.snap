@@ -3,11 +3,14 @@
 exports[`section component matches the existing snapshot WITH a title and children 1`] = `
 <div>
   <section
-    class="light section"
+    aria-label="test-title section"
+    class="lightModeSection section"
   >
-    <h3>
+    <h2
+      class="lightModeTitle title"
+    >
       test-title
-    </h3>
+    </h2>
     <p>
       Hello World
     </p>
@@ -18,7 +21,8 @@ exports[`section component matches the existing snapshot WITH a title and childr
 exports[`section component matches the existing snapshot WITHOUT a title and WITH children 1`] = `
 <div>
   <section
-    class="light section"
+    aria-label="undefined section"
+    class="lightModeSection section"
   >
     <p>
       Hello World
