@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`section component matches the existing snapshot WITH a title and children 1`] = `
+<div>
+  <section>
+    <title>
+      test-title
+    </title>
+    <p>
+      Hello World
+    </p>
+  </section>
+</div>
+`;
+
+exports[`section component matches the existing snapshot WITHOUT a title and WITH children 1`] = `
+<div>
+  <section>
+    <p>
+      Hello World
+    </p>
+  </section>
+</div>
+`;
