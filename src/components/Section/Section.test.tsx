@@ -51,4 +51,36 @@ describe('section component', () => {
 
     expect(container).toMatchSnapshot();
   });
+
+  it('renders darkmode section with a dark background color and white title font', () => {
+    render(
+      <Section title={'test-title'} darkMode={true}>
+        <p>Hello World</p>
+      </Section>
+    );
+
+    // Grabs elements from rendered DOM
+    const sectionEl = screen.getByLabelText(/test-title section/i);
+    const titleEl = screen.getByText(/test-title/i);
+
+    // Checks that elements have the expected class attribute values
+    expect(sectionEl).toHaveClass('darkModeSection');
+    expect(titleEl).toHaveClass('darkModeTitle');
+  });
+
+  it('renders default section with a white background color and dark title font', () => {
+    render(
+      <Section title={'test-title'}>
+        <p>Hello World</p>
+      </Section>
+    );
+
+    // Grabs elements from rendered DOM
+    const sectionEl = screen.getByLabelText(/test-title section/i);
+    const titleEl = screen.getByText(/test-title/i);
+
+    // Checks that elements have the expected class attribute values
+    expect(sectionEl).toHaveClass('lightModeSection');
+    expect(titleEl).toHaveClass('lightModeTitle');
+  });
 });
