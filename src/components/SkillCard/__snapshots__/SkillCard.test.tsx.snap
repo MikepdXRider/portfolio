@@ -2,18 +2,32 @@
 
 exports[`SkillCard component matches the existing snapshot 1`] = `
 <div>
-  <article>
-    <h3>
-      test-skill-title
-    </h3>
-    <ul>
-      <li>
+  <article
+    class="card"
+  >
+    <div>
+      <h3
+        class="title"
+      >
+        test-skill-title
+      </h3>
+    </div>
+    <ul
+      class="contentList"
+    >
+      <li
+        class="contentListItem"
+      >
         test-skill-one
       </li>
-      <li>
+      <li
+        class="contentListItem"
+      >
         test-skill-two
       </li>
-      <li>
+      <li
+        class="contentListItem"
+      >
         test-skill-three
       </li>
     </ul>
