@@ -1,12 +1,21 @@
 import React from 'react';
 import './App.css';
+import styles from './App.module.css';
 import Section from './components/Section/Section';
+import portrait from './assets/round-portrait.png';
 
 function App() {
   return (
-    <main className="App">
+    <main>
+      {/* hero section */}
       <Section darkMode={true}>
-        <p>Hello Hero Section!</p>
+        <div className={styles.heroContainer}>
+          <img src={portrait} alt="Profile" className={styles.img} />
+          <div>
+            <h1 className={styles.name}>Michael X Rider</h1>
+            <h2 className={styles.title}>Software Engineer</h2>
+          </div>
+        </div>
       </Section>
       <Section title={'About Me'}>
         <p>Hello About Me Section!</p>
