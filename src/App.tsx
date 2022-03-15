@@ -3,6 +3,8 @@ import './App.css';
 import styles from './App.module.css';
 import Section from './components/Section/Section';
 import portrait from './assets/round-portrait.png';
+import { skills } from './data/skills';
+import SkillCard from './components/SkillCard/SkillCard';
 
 function App() {
   return (
@@ -31,7 +33,11 @@ function App() {
       </Section>
 
       <Section title={'Skills'} darkMode={true}>
-        <p>Hello Skills Section!</p>
+        <ul className={styles.skillsList}>
+          {skills.map((skill) => (
+            <SkillCard title={skill.title} content={skill.content} />
+          ))}
+        </ul>
       </Section>
 
       <Section title={'Projects'}>
