@@ -1,8 +1,12 @@
 import React from 'react';
-import { Skill } from '../../interfaces/Skill';
 import styles from './SkillCard.module.css';
 
-export default function SkillCard({ title, content }: Skill) {
+interface SkillCardProps {
+  title: string;
+  content: string[];
+}
+
+export default function SkillCard({ title, content }: SkillCardProps) {
   return (
     <article className={styles.card}>
       <div>
