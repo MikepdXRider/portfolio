@@ -17,6 +17,7 @@ function App() {
           </div>
         </div>
       </Section>
+
       <Section title={'About Me'}>
         <div className={styles.aboutContainer}>
           <p className={styles.aboutText}>
@@ -24,16 +25,19 @@ function App() {
             operations management experience to help teams overcome unique
             challenges, achieve project goals, and deploy market-ready
             applications. I’m energized working in a fun, collaborative, and
-            industrious environment to materialize a collective goals.
+            industrious environment to materialize collective goals.
           </p>
         </div>
       </Section>
+
       <Section title={'Skills'} darkMode={true}>
         <p>Hello Skills Section!</p>
       </Section>
+
       <Section title={'Projects'}>
         <p>Hello Projects Section!</p>
       </Section>
+
       <Section title={'Contact Me'} darkMode={true}>
         <p>Hello Contact Me Section!</p>
       </Section>
