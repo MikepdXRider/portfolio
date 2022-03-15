@@ -18,7 +18,7 @@ export default function Section({
         styles.section
       }`}
     >
-      {title && <h3>{title}</h3>}
+      {title && <h2 className={`${darkMode && styles.darkTitle}`}>{title}</h2>}
 
       {children}
     </section>

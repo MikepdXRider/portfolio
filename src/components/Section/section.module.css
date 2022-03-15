@@ -12,3 +12,8 @@
   /* alternatives: hsl(0,0%,100%) | rgb(255,255,255)*/
   background: #ffffff;
 }
+
+.darkTitle {
+  /* alternatives: hsl(90,58%,56%) | rgb(143,209,79)*/
+  color: white;
+}
