@@ -17,6 +17,7 @@
 .title {
   color: #8fd14f;
   text-align: center;
+  font-size: 36px;
 }
 
 .img {
@@ -34,11 +35,12 @@
 /* about me section content */
 .aboutContainer {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
 .aboutText {
   width: 90%;
   font-size: 1.25rem;
+  position: relative;
 }

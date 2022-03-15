@@ -24,7 +24,7 @@ function App() {
             operations management experience to help teams overcome unique
             challenges, achieve project goals, and deploy market-ready
             applications. I’m energized working in a fun, collaborative, and
-            industrious environment to materialize a clear set of goals.
+            industrious environment to materialize a collective goals.
           </p>
         </div>
       </Section>
