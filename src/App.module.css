@@ -5,7 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 4vw;
 }
 
 .name {
@@ -17,6 +17,7 @@
 .title {
   color: #8fd14f;
   text-align: center;
+  font-size: 36px;
 }
 
 .img {
@@ -27,6 +28,20 @@
 @media screen and (max-width: 800px) {
   .heroContainer {
     flex-direction: column;
+    justify-content: space-evenly;
     gap: 0;
   }
+}
+
+/* about me section content */
+.aboutContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutText {
+  width: 90%;
+  font-size: 1.25rem;
+  position: relative;
 }
