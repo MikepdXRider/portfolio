@@ -45,3 +45,21 @@
   font-size: 1.25rem;
   position: relative;
 }
+
+/* skills section content */
+.skillsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skillsList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 5vw;
+  margin: 10px;
+  width: 90%;
+}

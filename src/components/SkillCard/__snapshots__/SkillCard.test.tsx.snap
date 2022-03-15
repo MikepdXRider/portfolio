@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SkillCard component matches the existing snapshot 1`] = `
+<div>
+  <article
+    class="card"
+  >
+    <div>
+      <h3
+        class="title"
+      >
+        test-skill-title
+      </h3>
+    </div>
+    <ul
+      class="contentList"
+    >
+      <li
+        class="contentListItem"
+      >
+        test-skill-one
+      </li>
+      <li
+        class="contentListItem"
+      >
+        test-skill-two
+      </li>
+      <li
+        class="contentListItem"
+      >
+        test-skill-three
+      </li>
+    </ul>
+  </article>
+</div>
+`;
