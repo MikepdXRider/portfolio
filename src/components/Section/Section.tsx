@@ -15,7 +15,7 @@ export default function Section({
 }: SectionProps) {
   return (
     <section
-      aria-label={`${title ? title : ''} section`}
+      aria-label={`${title} section`}
       className={`${
         darkMode ? styles.darkModeSection : styles.lightModeSection
       } ${title ? styles.sectionWithTitle : styles.section}`}

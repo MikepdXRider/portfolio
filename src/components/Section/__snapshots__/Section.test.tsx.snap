@@ -4,13 +4,17 @@ exports[`section component matches the existing snapshot WITH a title and childr
 <div>
   <section
     aria-label="test-title section"
-    class="lightModeSection section"
+    class="lightModeSection sectionWithTitle"
   >
-    <h2
-      class="lightModeTitle title"
+    <article
+      class="titleContainer"
     >
-      test-title
-    </h2>
+      <h2
+        class="lightModeTitle title"
+      >
+        test-title
+      </h2>
+    </article>
     <p>
       Hello World
     </p>
