@@ -4,14 +4,23 @@ import Section from './components/Section/Section';
 
 function App() {
   return (
-    <div className="App">
+    <main className="App">
       <Section title={'Hero'} darkMode={true}>
-        <p>Hello World!</p>
+        <p>Hello Hero Section!</p>
       </Section>
       <Section title={'About Me'}>
-        <p>Hello World!</p>
+        <p>Hello About Me Section!</p>
       </Section>
-    </div>
+      <Section title={'Skills'} darkMode={true}>
+        <p>Hello Skills Section!</p>
+      </Section>
+      <Section title={'Projects'}>
+        <p>Hello Projects Section!</p>
+      </Section>
+      <Section title={'Contact Me'} darkMode={true}>
+        <p>Hello Contact Me Section!</p>
+      </Section>
+    </main>
   );
 }
 
