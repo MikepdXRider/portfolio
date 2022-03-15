@@ -30,3 +30,15 @@
     gap: 0;
   }
 }
+
+/* about me section content */
+.aboutContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutText {
+  width: 90%;
+  font-size: 1.25rem;
+}

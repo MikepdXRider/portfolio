@@ -18,7 +18,15 @@ function App() {
         </div>
       </Section>
       <Section title={'About Me'}>
-        <p>Hello About Me Section!</p>
+        <div className={styles.aboutContainer}>
+          <p className={styles.aboutText}>
+            <b>Software Engineer</b> leveraging eight years of production and
+            operations management experience to help teams overcome unique
+            challenges, achieve project goals, and deploy market-ready
+            applications. I’m energized working in a fun, collaborative, and
+            industrious environment to materialize a clear set of goals.
+          </p>
+        </div>
       </Section>
       <Section title={'Skills'} darkMode={true}>
         <p>Hello Skills Section!</p>
