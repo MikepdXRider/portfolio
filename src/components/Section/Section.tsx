@@ -9,6 +9,7 @@ export default function Section({ children, title }: sectionProps) {
   return (
     <section>
       {title && <title>{title}</title>}
+
       {children}
     </section>
   );

@@ -15,6 +15,7 @@ describe('section component', () => {
     expect(titleEl).toBeInTheDocument();
     expect(childEl).toBeInTheDocument();
   });
+
   it('matches the existing snapshot WITH a title and children', () => {
     const { container } = render(
       <Section title={'test-title'}>
@@ -24,6 +25,7 @@ describe('section component', () => {
 
     expect(container).toMatchSnapshot();
   });
+
   it('renders section component WITHOUT a title and WITH children', () => {
     render(
       <Section>
@@ -35,6 +37,7 @@ describe('section component', () => {
 
     expect(childEl).toBeInTheDocument();
   });
+
   it('matches the existing snapshot WITHOUT a title and WITH children', () => {
     const { container } = render(
       <Section>
