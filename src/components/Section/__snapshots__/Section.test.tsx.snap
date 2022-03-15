@@ -2,10 +2,12 @@
 
 exports[`section component matches the existing snapshot WITH a title and children 1`] = `
 <div>
-  <section>
-    <title>
+  <section
+    class="light section"
+  >
+    <h3>
       test-title
-    </title>
+    </h3>
     <p>
       Hello World
     </p>
@@ -15,7 +17,9 @@ exports[`section component matches the existing snapshot WITH a title and childr
 
 exports[`section component matches the existing snapshot WITHOUT a title and WITH children 1`] = `
 <div>
-  <section>
+  <section
+    class="light section"
+  >
     <p>
       Hello World
     </p>

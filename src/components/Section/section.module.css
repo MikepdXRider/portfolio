@@ -1,0 +1,14 @@
+.darkSection {
+  /* alternatives: hsl(225,7%,22%) | rgb(53,55,61)*/
+  background: #35373d;
+}
+
+.lightSection {
+  /* alternatives: hsl(0,0%,100%) | rgb(255,255,255)*/
+  background: #ffffff;
+}
+
+.section {
+  min-height: 500px;
+  min-width: 100vw;
+}
