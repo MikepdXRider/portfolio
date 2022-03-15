@@ -9,9 +9,11 @@ describe('section component', () => {
       </Section>
     );
 
+    // Grabs elements from rendered DOM
     const titleEl = screen.getByText(/test-title/i);
     const childEl = screen.getByText(/hello world/i);
 
+    // Checks that elements are in rendered DOM
     expect(titleEl).toBeInTheDocument();
     expect(childEl).toBeInTheDocument();
   });
@@ -33,8 +35,10 @@ describe('section component', () => {
       </Section>
     );
 
+    // Grabs elements from rendered DOM
     const childEl = screen.getByText(/hello world/i);
 
+    // Checks that elements are in rendered DOM
     expect(childEl).toBeInTheDocument();
   });
 
