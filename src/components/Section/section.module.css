@@ -24,12 +24,23 @@
   background: var(--white);
 }
 
+.titleContainer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
 .title {
   grid-row: 0 / 1;
   text-decoration: underline;
   text-decoration-color: var(--accentgreen);
   -moz-text-decoration-color: var(--accentgreen);
   text-decoration-thickness: 5px;
+  /* positioning within container */
+  width: 95%;
+  position: relative;
+  left: 5%;
 }
 
 .darkModeTitle {

@@ -21,13 +21,15 @@ export default function Section({
       } ${styles.section}`}
     >
       {title && (
-        <h2
-          className={`${
-            darkMode ? styles.darkModeTitle : styles.lightModeTitle
-          } ${styles.title}`}
-        >
-          {title}
-        </h2>
+        <article className={styles.titleContainer}>
+          <h2
+            className={`${
+              darkMode ? styles.darkModeTitle : styles.lightModeTitle
+            } ${styles.title}`}
+          >
+            {title}
+          </h2>
+        </article>
       )}
 
       {children}
