@@ -1,15 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Section from './components/Section/Section';
 
 function App() {
   return (
     <div className="App">
-      <Section title={'Test'}>
+      <Section title={'Hero'}>
         <p>Hello World!</p>
       </Section>
-      <Section title={'Test'} darkMode={true}>
+      <Section title={'Hero'} darkMode={true}>
         <p>Hello World!</p>
       </Section>
     </div>
