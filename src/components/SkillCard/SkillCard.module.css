@@ -1,0 +1,41 @@
+:root {
+  /* alternatives: hsl(225,7%,22%) | rgb(53,55,61)*/
+  --darkslategrey: #35373d;
+  /* alternatives: hsl(0,100%,100%) | rgb(255,255,255)*/
+  --white: #ffffff;
+  /* alternatives: hsl(0,0%,100%) | rgb(0,0,0)*/
+  --black: #000000;
+  /* alternatives: hsl(90,58%,56%) | rgb(143,209,79)*/
+  --accentgreen: #8fd14f;
+}
+
+.card {
+  background: var(--white);
+  border-radius: 10px;
+  border: var(--darkslategrey) 3px solid;
+  padding: 5px;
+  min-width: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 250px;
+  text-align: center;
+  box-shadow: 5px 5px 15px 5px var(--black);
+}
+
+.title {
+  color: var(--black);
+  text-decoration: underline;
+  text-decoration-color: var(--accentgreen);
+  text-decoration-thickness: 2px;
+  font-size: 24px;
+}
+
+.contentList {
+  list-style: none;
+}
+
+.contentListItem {
+  font-size: 20px;
+  margin-top: 5px;
+}

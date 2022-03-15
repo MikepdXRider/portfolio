@@ -1,13 +1,16 @@
 import React from 'react';
 import { Skill } from '../../interfaces/Skill';
+import styles from './SkillCard.module.css';
 
 export default function SkillCard({ title, content }: Skill) {
   return (
-    <article>
-      <h3>{title}</h3>
-      <ul>
+    <article className={styles.card}>
+      <div>
+        <h3 className={styles.title}>{title}</h3>
+      </div>
+      <ul className={styles.contentList}>
         {content.map((skill) => (
-          <li>{skill}</li>
+          <li className={styles.contentListItem}>{skill}</li>
         ))}
       </ul>
     </article>
