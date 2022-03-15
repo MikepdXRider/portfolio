@@ -5,7 +5,7 @@ import Section from './components/Section/Section';
 function App() {
   return (
     <main className="App">
-      <Section title={'Hero'} darkMode={true}>
+      <Section darkMode={true}>
         <p>Hello Hero Section!</p>
       </Section>
       <Section title={'About Me'}>

@@ -15,10 +15,10 @@ export default function Section({
 }: SectionProps) {
   return (
     <section
-      aria-label={`${title && title} section`}
+      aria-label={`${title ? title : ''} section`}
       className={`${
         darkMode ? styles.darkModeSection : styles.lightModeSection
-      } ${styles.section}`}
+      } ${title ? styles.sectionWithTitle : styles.section}`}
     >
       {title && (
         <article className={styles.titleContainer}>

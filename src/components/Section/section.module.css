@@ -9,11 +9,16 @@
   --accentgreen: #8fd14f;
 }
 
-.section {
+.sectionWithTitle {
   min-height: 500px;
   min-width: 100%;
   display: grid;
   grid-template-rows: 1fr 4fr;
+}
+
+.section {
+  min-height: 500px;
+  min-width: 100%;
 }
 
 .darkModeSection {
