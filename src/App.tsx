@@ -35,7 +35,9 @@ function App() {
       <Section title={'Skills'} darkMode={true}>
         <ul className={styles.skillsList}>
           {skills.map((skill) => (
-            <SkillCard title={skill.title} content={skill.content} />
+            <li key={skill.title}>
+              <SkillCard title={skill.title} content={skill.content} />
+            </li>
           ))}
         </ul>
       </Section>

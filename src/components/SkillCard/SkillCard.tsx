@@ -10,7 +10,9 @@ export default function SkillCard({ title, content }: Skill) {
       </div>
       <ul className={styles.contentList}>
         {content.map((skill) => (
-          <li className={styles.contentListItem}>{skill}</li>
+          <li key={skill} className={styles.contentListItem}>
+            {skill}
+          </li>
         ))}
       </ul>
     </article>
