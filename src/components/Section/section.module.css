@@ -1,19 +1,35 @@
+:root {
+  /* alternatives: hsl(225,7%,22%) | rgb(53,55,61)*/
+  --darkslategrey: #35373d;
+  /* alternatives: hsl(0,0%,100%) | rgb(255,255,255)*/
+  --white: #ffffff;
+  /* alternatives: hsl(90,58%,56%) | rgb(143,209,79)*/
+  --accentgreen: #8fd14f;
+}
+
 .section {
   min-height: 500px;
   min-width: 100%;
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
 }
 
 .darkSection {
-  /* alternatives: hsl(225,7%,22%) | rgb(53,55,61)*/
-  background: #35373d;
+  background: var(--darkslategrey);
 }
 
 .lightSection {
-  /* alternatives: hsl(0,0%,100%) | rgb(255,255,255)*/
-  background: #ffffff;
+  background: var(--white);
+}
+
+.title {
+  grid-row: 0 / 1;
+  text-decoration: underline;
+  text-decoration-color: var(--accentgreen);
+  -moz-text-decoration-color: var(--accentgreen);
+  text-decoration-thickness: 5px;
 }
 
 .darkTitle {
-  /* alternatives: hsl(90,58%,56%) | rgb(143,209,79)*/
-  color: white;
+  color: var(--white);
 }

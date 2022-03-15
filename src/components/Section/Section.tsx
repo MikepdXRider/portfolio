@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './section.module.css';
+import '../../App.css';
 
 interface SectionProps {
   children: React.ReactChild;
@@ -18,7 +19,11 @@ export default function Section({
         styles.section
       }`}
     >
-      {title && <h2 className={`${darkMode && styles.darkTitle}`}>{title}</h2>}
+      {title && (
+        <h2 className={`${darkMode && styles.darkTitle} ${styles.title}`}>
+          {title}
+        </h2>
+      )}
 
       {children}
     </section>
