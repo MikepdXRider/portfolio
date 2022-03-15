@@ -5,7 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 4vw;
 }
 
 .name {
@@ -28,6 +28,7 @@
 @media screen and (max-width: 800px) {
   .heroContainer {
     flex-direction: column;
+    justify-content: space-evenly;
     gap: 0;
   }
 }
