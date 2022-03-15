@@ -1,4 +1,4 @@
-export default interface Skill {
+export interface Skill {
   title: string;
   content: string[];
 }
