@@ -1,11 +1,11 @@
 import React from 'react';
 
-interface sectionProps {
+interface SectionProps {
   children: React.ReactChild;
   title?: string;
 }
 
-export default function Section({ children, title }: sectionProps) {
+export default function Section({ children, title }: SectionProps) {
   return (
     <section>
       {title && <title>{title}</title>}
