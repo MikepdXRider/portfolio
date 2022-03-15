@@ -9,9 +9,7 @@ function App() {
     <main>
       {/* hero section */}
       <Section darkMode={true}>
-        {/* return container*/}
-        <div className={styles.container}>
-          {/* text container */}
+        <div className={styles.heroContainer}>
           <img src={portrait} alt="Profile" className={styles.img} />
           <div>
             <h1 className={styles.name}>Michael X Rider</h1>
