@@ -1,5 +1,5 @@
 import React from 'react';
-import { Skill } from '../../interfaces/Skill';
+import type { Skill } from '../../interfaces/Skill';
 import styles from './SkillCard.module.css';
 
 export default function SkillCard({ title, content }: Skill) {
