@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './ProjectCard.module.css';
 
 interface ProjectCardProps {
   title: string;
@@ -19,17 +20,25 @@ export default function ProjectCard({
     <article className={styles.flipCard}>
       <div className={styles.flipCardInner}>
         <div className={styles.flipCardFront}>
-          <h2>{title}</h2>
+          <h2 className={styles.title}>{title}</h2>
           <ul>
             {techStack.map((techItem) => (
-              <li key={techItem}>{techItem}</li>
+              <li key={techItem} className={styles.techListItem}>
+                {techItem}
+              </li>
             ))}
           </ul>
         </div>
         <div className={styles.flipCardBack}>
           <h3>{description}</h3>
-          <a href={githubUrl}>Github</a>
-          <a href={livesiteUrl}>Livesite</a>
+          <div className={styles.linkContainer}>
+            <a className={styles.link} href={githubUrl}>
+              Github
+            </a>
+            <a className={styles.link} href={livesiteUrl}>
+              Livesite
+            </a>
+          </div>
         </div>
       </div>
     </article>

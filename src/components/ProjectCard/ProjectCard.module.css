@@ -1,0 +1,77 @@
+:root {
+  /* alternatives: hsl(225,7%,22%) | rgb(53,55,61)*/
+  --darkslategrey: #35373d;
+  /* alternatives: hsl(0,100%,100%) | rgb(255,255,255)*/
+  --white: #ffffff;
+  /* alternatives: hsl(0,0%,100%) | rgb(0,0,0)*/
+  --black: #000000;
+  /* alternatives: hsl(90,58%,56%) | rgb(143,209,79)*/
+  --accentgreen: #8fd14f;
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flipCard {
+  background-color: transparent;
+  height: 200px;
+  min-width: 240px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flipCardInner {
+  border-radius: 10px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  background-color: var(--darkslategrey);
+  color: var(--white);
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flipCard:hover .flipCardInner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flipCardFront,
+.flipCardBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* TODO: Style the front side (fallback if image is missing) */
+
+/* Style the back side */
+.flipCardBack {
+  transform: rotateY(180deg);
+}
+
+/* Flip Card front side content */
+.techListItem {
+  list-style-type: none;
+}
+
+.title {
+  color: var(--accentgreen);
+}
+
+.link {
+  text-decoration: none;
+  display: block;
+  width: 40%;
+  height: 20%;
+  border-radius: 5px;
+  background-color: var(--accentgreen);
+  color: var(--darkslategrey);
+}
+
+.linkContainer {
+  display: flex;
+  justify-content: space-around;
+}
