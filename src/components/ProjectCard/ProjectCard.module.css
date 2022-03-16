@@ -28,6 +28,7 @@
   transform-style: preserve-3d;
   background-color: var(--darkslategrey);
   color: var(--white);
+  border: var(--darkslategrey) 3px solid;
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
@@ -45,6 +46,8 @@
   backface-visibility: hidden;
   font-size: 20px;
   padding: 5px;
+  box-shadow: 5px 5px 10px 5px var(--black);
+  border-radius: 10px;
 }
 
 /* TODO: Style the front side (fallback if image is missing) */
