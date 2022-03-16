@@ -93,4 +93,5 @@
   border-radius: 5px;
   background-color: var(--accentgreen);
   color: var(--darkslategrey);
+  border: 1px solid var(--black);
 }
