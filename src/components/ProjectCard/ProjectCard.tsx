@@ -21,7 +21,7 @@ export default function ProjectCard({
       <div className={styles.flipCardInner}>
         <div className={styles.flipCardFront}>
           <h2 className={styles.title}>{title}</h2>
-          <ul>
+          <ul className={styles.techList}>
             {techStack.map((techItem) => (
               <li key={techItem} className={styles.techListItem}>
                 {techItem}
@@ -30,12 +30,22 @@ export default function ProjectCard({
           </ul>
         </div>
         <div className={styles.flipCardBack}>
-          <h3>{description}</h3>
+          <p>{description}</p>
           <div className={styles.linkContainer}>
-            <a className={styles.link} href={githubUrl}>
+            <a
+              className={styles.link}
+              href={githubUrl}
+              target="_blank"
+              rel="noreferrer"
+            >
               Github
             </a>
-            <a className={styles.link} href={livesiteUrl}>
+            <a
+              className={styles.link}
+              href={livesiteUrl}
+              target="_blank"
+              rel="noreferrer"
+            >
               Livesite
             </a>
           </div>
