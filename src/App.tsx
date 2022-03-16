@@ -5,6 +5,8 @@ import Section from './components/Section/Section';
 import portrait from './assets/round-portrait.png';
 import { skills } from './data/skills';
 import SkillCard from './components/SkillCard/SkillCard';
+import { projects } from './data/projects';
+import ProjectCard from './components/ProjectCard/ProjectCard';
 
 function App() {
   return (
@@ -45,7 +47,15 @@ function App() {
       </Section>
 
       <Section title={'Projects'}>
-        <p>Hello Projects Section!</p>
+        <div className={styles.skillsContainer}>
+          <ul className={styles.skillsList}>
+            {projects.map((project) => (
+              <li key={project.title}>
+                <ProjectCard {...project} />
+              </li>
+            ))}
+          </ul>
+        </div>
       </Section>
 
       <Section title={'Contact Me'} darkMode={true}>
