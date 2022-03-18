@@ -20,14 +20,29 @@ describe('ProjectCard component', () => {
     render(<ProjectCard {...mockProject} />);
 
     // front of card
-    screen.getByText(/mock-project-title/i);
-    screen.getByText(/mock-tech-one/i);
-    screen.getByText(/mock-tech-two/i);
-    screen.getByText(/mock-tech-three/i);
+    // grabs relevant elements.
+    const titleEl = screen.getByText(/mock-project-title/i);
+    const techEl1 = screen.getByText(/mock-tech-one/i);
+    const techEl2 = screen.getByText(/mock-tech-two/i);
+    const techEl3 = screen.getByText(/mock-tech-three/i);
+    // checks for elements on virtual dom.
+    expect(titleEl).toBeInTheDocument();
+    expect(techEl1).toBeInTheDocument();
+    expect(techEl2).toBeInTheDocument();
+    expect(techEl3).toBeInTheDocument();
 
     // back of card
-    screen.getByText(/mock project description/i);
-    screen.getByLabelText(/mock-project-title livesite link/i);
-    screen.getByLabelText(/mock-project-title github link/i);
+    // grabs relevant elements.
+    const descriptionEl = screen.getByText(/mock project description/i);
+    const livesiteLinkEl = screen.getByLabelText(
+      /mock-project-title livesite link/i
+    );
+    const githubLinkEl = screen.getByLabelText(
+      /mock-project-title github link/i
+    );
+    // checks for elements on virtual dom.
+    expect(descriptionEl).toBeInTheDocument();
+    expect(livesiteLinkEl).toBeInTheDocument();
+    expect(githubLinkEl).toBeInTheDocument();
   });
 });
