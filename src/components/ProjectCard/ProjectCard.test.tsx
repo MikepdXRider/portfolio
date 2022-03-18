@@ -44,5 +44,11 @@ describe('ProjectCard component', () => {
     expect(descriptionEl).toBeInTheDocument();
     expect(livesiteLinkEl).toBeInTheDocument();
     expect(githubLinkEl).toBeInTheDocument();
+    // checks that links have correct href attribute values.
+    expect(livesiteLinkEl).toHaveAttribute(
+      'href',
+      'https://mock-livesite.com/'
+    );
+    expect(githubLinkEl).toHaveAttribute('href', 'https://mock-github.com/');
   });
 });
