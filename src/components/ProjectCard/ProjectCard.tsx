@@ -37,6 +37,7 @@ export default function ProjectCard({
               href={githubUrl}
               target="_blank"
               rel="noreferrer"
+              aria-label={`${title} github link. Opens a new tab.`}
             >
               Github
             </a>
@@ -45,6 +46,7 @@ export default function ProjectCard({
               href={livesiteUrl}
               target="_blank"
               rel="noreferrer"
+              aria-label={`${title} livesite link. Opens a new tab.`}
             >
               Livesite
             </a>

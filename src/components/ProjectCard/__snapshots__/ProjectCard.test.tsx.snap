@@ -46,16 +46,18 @@ exports[`ProjectCard component matches the existing snapshot 1`] = `
           class="linkContainer"
         >
           <a
+            aria-label="Mock-project-title github link. Opens a new tab."
             class="link"
-            href="https://placekitten.com/"
+            href="https://mock-github.com/"
             rel="noreferrer"
             target="_blank"
           >
             Github
           </a>
           <a
+            aria-label="Mock-project-title livesite link. Opens a new tab."
             class="link"
-            href="https://placekitten.com/"
+            href="https://mock-livesite.com/"
             rel="noreferrer"
             target="_blank"
           >
