@@ -19,7 +19,7 @@ export default function ProjectCard({
   return (
     <article className={styles.flipCard}>
       <div className={styles.flipCardInner}>
-        <div className={styles.flipCardFront}>
+        <div className={styles.flipCardFront} aria-label="Project card front.">
           <h2 className={styles.title}>{title}</h2>
           <ul className={styles.techList}>
             {techStack.map((techItem) => (
@@ -29,7 +29,7 @@ export default function ProjectCard({
             ))}
           </ul>
         </div>
-        <div className={styles.flipCardBack}>
+        <div className={styles.flipCardBack} aria-label="Project card back.">
           <p>{description}</p>
           <div className={styles.linkContainer}>
             <a
@@ -37,6 +37,7 @@ export default function ProjectCard({
               href={githubUrl}
               target="_blank"
               rel="noreferrer"
+              aria-label={`${title} github link. Opens a new tab.`}
             >
               Github
             </a>
@@ -45,6 +46,7 @@ export default function ProjectCard({
               href={livesiteUrl}
               target="_blank"
               rel="noreferrer"
+              aria-label={`${title} livesite link. Opens a new tab.`}
             >
               Livesite
             </a>

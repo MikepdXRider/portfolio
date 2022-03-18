@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProjectCard component matches the existing snapshot 1`] = `
+<div>
+  <article
+    class="flipCard"
+  >
+    <div
+      class="flipCardInner"
+    >
+      <div
+        aria-label="Project card front."
+        class="flipCardFront"
+      >
+        <h2
+          class="title"
+        >
+          Mock-project-title
+        </h2>
+        <ul
+          class="techList"
+        >
+          <li
+            class="techListItem"
+          >
+            Mock-tech-one
+          </li>
+          <li
+            class="techListItem"
+          >
+            Mock-tech-two
+          </li>
+          <li
+            class="techListItem"
+          >
+            Mock-tech-three
+          </li>
+        </ul>
+      </div>
+      <div
+        aria-label="Project card back."
+        class="flipCardBack"
+      >
+        <p>
+          Mock project description
+        </p>
+        <div
+          class="linkContainer"
+        >
+          <a
+            aria-label="Mock-project-title github link. Opens a new tab."
+            class="link"
+            href="https://mock-github.com/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            Github
+          </a>
+          <a
+            aria-label="Mock-project-title livesite link. Opens a new tab."
+            class="link"
+            href="https://mock-livesite.com/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            Livesite
+          </a>
+        </div>
+      </div>
+    </div>
+  </article>
+</div>
+`;
