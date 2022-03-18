@@ -9,6 +9,7 @@ exports[`ProjectCard component matches the existing snapshot 1`] = `
       class="flipCardInner"
     >
       <div
+        aria-label="Project card front."
         class="flipCardFront"
       >
         <h2
@@ -37,6 +38,7 @@ exports[`ProjectCard component matches the existing snapshot 1`] = `
         </ul>
       </div>
       <div
+        aria-label="Project card back."
         class="flipCardBack"
       >
         <p>
