@@ -7,6 +7,7 @@ import { skills } from './data/skills';
 import SkillCard from './components/SkillCard/SkillCard';
 import { projects } from './data/projects';
 import ProjectCard from './components/ProjectCard/ProjectCard';
+import Contact from './components/Contact/Contact';
 
 function App() {
   return (
@@ -59,7 +60,12 @@ function App() {
       </Section>
 
       <Section title={'Contact Me'} darkMode={true}>
-        <div>Hello Contact me section!</div>
+        <Contact
+          imgSrc="http://placekitten.com/100/100"
+          imgAlt="cute kitten"
+          linkHref="http://placekitten.com"
+          linkAriaLabel="redirects browser to placekitten.com"
+        />
       </Section>
     </main>
   );

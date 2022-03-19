@@ -15,8 +15,8 @@ export default function Contact({
 }: ContactProps) {
   return (
     <article>
-      <img src={imgSrc} alt={imgAlt} />
       <a href={linkHref} aria-label={linkAriaLabel}>
+        <img src={imgSrc} alt={imgAlt} />
         {linkHref}
       </a>
     </article>
