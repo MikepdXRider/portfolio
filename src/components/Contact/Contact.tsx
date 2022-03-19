@@ -1,18 +1,23 @@
 import React from 'react';
 
 interface ContactProps {
-  src: string;
-  alt: string;
-  href: string;
-  ariaLabel: string;
+  imgSrc: string;
+  imgAlt: string;
+  linkHref: string;
+  linkAriaLabel: string;
 }
 
-export default function Contact({ src, alt, href, ariaLabel }: ContactProps) {
+export default function Contact({
+  imgSrc,
+  imgAlt,
+  linkHref,
+  linkAriaLabel,
+}: ContactProps) {
   return (
     <article>
-      <img src={src} alt={alt} />
-      <a href={href} aria-label={ariaLabel}>
-        {href}
+      <img src={imgSrc} alt={imgAlt} />
+      <a href={linkHref} aria-label={linkAriaLabel}>
+        {linkHref}
       </a>
     </article>
   );

@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`contact component matches the existing snapshot 1`] = `
+<div>
+  <article>
+    <img
+      alt="mock alt"
+      src="https://placekitten.com"
+    />
+    <a
+      aria-label="mock link aria-label "
+      href="https://placecage.com"
+    >
+      https://placecage.com
+    </a>
+  </article>
+</div>
+`;

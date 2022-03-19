@@ -58,7 +58,9 @@ function App() {
         </div>
       </Section>
 
-      <Section title={'Contact Me'} darkMode={true}></Section>
+      <Section title={'Contact Me'} darkMode={true}>
+        <div>Hello Contact me section!</div>
+      </Section>
     </main>
   );
 }
