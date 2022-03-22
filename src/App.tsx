@@ -1,23 +1,30 @@
 import React from 'react';
+// styles
 import './App.css';
 import styles from './App.module.css';
+// components
+import Contact from './components/Contact/Contact';
 import Section from './components/Section/Section';
+import SkillCard from './components/SkillCard/SkillCard';
+import ProjectCard from './components/ProjectCard/ProjectCard';
+import Nav from './components/Nav/Nav';
+// assets
 import portrait from './assets/round-portrait.png';
 import gmail from './assets/email.png';
 import linkedin from './assets/linkedin.png';
 import github from './assets/github.png';
 import resumepng from './assets/resume.png';
+// data
 import { skills } from './data/skills';
-import SkillCard from './components/SkillCard/SkillCard';
 import { projects } from './data/projects';
-import ProjectCard from './components/ProjectCard/ProjectCard';
-import Contact from './components/Contact/Contact';
-import HeaderNav from './components/HeaverNav/HeaderNav';
+import { nav } from './data/nav';
 
 function App() {
   return (
     <main>
-      <HeaderNav />
+      <header>
+        <Nav navData={nav} />
+      </header>
 
       {/* hero section */}
       <Section darkMode={true}>
