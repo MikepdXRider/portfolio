@@ -74,7 +74,7 @@ function App() {
           <Contact
             imgSrc={linkedin}
             imgAlt="linkedin icon"
-            linkHref="https://linkedin.com/in/MichaelpdXRider"
+            linkHref="https://linkedin.com/in/MikepdXRider"
             linkText="/MichaelpdXRider"
             linkAriaLabel="Opens linkedin profile page in new tab"
           />
