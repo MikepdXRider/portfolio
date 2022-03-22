@@ -1,4 +1,4 @@
-import { getByRole, render, screen } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import ProjectCard from './ProjectCard';
 
 describe('ProjectCard component', () => {
@@ -34,6 +34,7 @@ describe('ProjectCard component', () => {
     // back of card
     // grabs relevant elements.
     const descriptionEl = screen.getByText(/mock project description/i);
+    // could use getByRole for links.
     const livesiteLinkEl = screen.getByLabelText(
       /mock-project-title livesite link/i
     );
