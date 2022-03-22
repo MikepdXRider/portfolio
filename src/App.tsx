@@ -12,12 +12,12 @@ import SkillCard from './components/SkillCard/SkillCard';
 import { projects } from './data/projects';
 import ProjectCard from './components/ProjectCard/ProjectCard';
 import Contact from './components/Contact/Contact';
-import Header from './components/Header/Header';
+import HeaderNav from './components/HeaverNav/HeaderNav';
 
 function App() {
   return (
     <main>
-      <Header />
+      <HeaderNav />
 
       {/* hero section */}
       <Section darkMode={true}>
