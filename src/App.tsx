@@ -10,14 +10,11 @@ import ProjectCard from './components/ProjectCard/ProjectCard';
 import Nav from './components/Nav/Nav';
 // assets
 import portrait from './assets/round-portrait.png';
-import gmail from './assets/email.png';
-import linkedin from './assets/linkedin.png';
-import github from './assets/github.png';
-import resumepng from './assets/resume.png';
 // data
 import { skills } from './data/skills';
 import { projects } from './data/projects';
 import { nav } from './data/nav';
+import { connectOptions } from './data/connectOptions';
 
 function App() {
   return (
@@ -74,37 +71,13 @@ function App() {
       </Section>
 
       <Section title={'Connect'} darkMode={true}>
-        <div className={styles.contactMeContainer}>
-          <ConnectOption
-            imgSrc={gmail}
-            imgAlt="email icon"
-            linkHref="mailto:mikepdxrider@gmail.com"
-            linkText="MikepdXRider@gmail.com"
-            linkAriaLabel="Opens Inbox or alternative email application"
-          />
-          <ConnectOption
-            imgSrc={linkedin}
-            imgAlt="linkedin icon"
-            linkHref="https://linkedin.com/in/MikepdXRider"
-            linkText="/MichaelpdXRider"
-            linkAriaLabel="Opens linkedin profile page in new tab"
-          />
-          <ConnectOption
-            imgSrc={github}
-            imgAlt="github icon"
-            linkHref="https://github.com/MikepdXRider"
-            linkText="/MikepdXRider"
-            linkAriaLabel="Opens github profile page in new tab"
-          />
-          <ConnectOption
-            imgSrc={resumepng}
-            imgAlt="resume icon"
-            linkHref="Michael_Rider_Resume.pdf"
-            linkText="Download Resume"
-            linkAriaLabel="Downloads resume"
-            isDownload
-          />
-        </div>
+        <ul className={styles.contactMeContainer}>
+          {connectOptions.map((connectOption) => (
+            <li>
+              <ConnectOption {...connectOption} />
+            </li>
+          ))}
+        </ul>
       </Section>
     </main>
   );

@@ -5,6 +5,7 @@ exports[`section component matches the existing snapshot WITH a title and childr
   <section
     aria-label="test-title section"
     class="lightModeSection sectionWithTitle"
+    id="test-title"
   >
     <article
       class="titleContainer"
