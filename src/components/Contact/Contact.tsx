@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './Contact.module.css';
 
 interface ContactProps {
   imgSrc: string;
@@ -16,9 +17,9 @@ export default function Contact({
   linkAriaLabel,
 }: ContactProps) {
   return (
-    <article>
-      <a href={linkHref} aria-label={linkAriaLabel}>
-        <img src={imgSrc} alt={imgAlt} />
+    <article className={styles.container}>
+      <a href={linkHref} aria-label={linkAriaLabel} className={styles.link}>
+        <img src={imgSrc} alt={imgAlt} className={styles.img} />
         {linkText}
       </a>
     </article>

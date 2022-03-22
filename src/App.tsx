@@ -65,7 +65,7 @@ function App() {
           imgSrc={gmail}
           imgAlt="email icon"
           linkHref="mailto:mikepdxrider@gmail.com"
-          linkText="mikepdxrider@gmail.com"
+          linkText="MikepdXRider@gmail.com"
           linkAriaLabel="Opens Inbox or alternative email application"
         />
       </Section>
