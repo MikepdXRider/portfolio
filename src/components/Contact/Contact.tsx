@@ -7,6 +7,7 @@ interface ContactProps {
   linkHref: string;
   linkText: string;
   linkAriaLabel: string;
+  isDownload?: boolean;
 }
 
 export default function Contact({
@@ -15,6 +16,7 @@ export default function Contact({
   linkHref,
   linkText,
   linkAriaLabel,
+  isDownload = false,
 }: ContactProps) {
   return (
     <article>
@@ -24,6 +26,7 @@ export default function Contact({
         className={styles.link}
         target="_blank"
         rel="noreferrer"
+        download={isDownload}
       >
         <img src={imgSrc} alt={imgAlt} className={styles.img} />
         {linkText}

@@ -6,6 +6,7 @@ import portrait from './assets/round-portrait.png';
 import gmail from './assets/email.png';
 import linkedin from './assets/linkedin.png';
 import github from './assets/github.png';
+import resumepng from './assets/resume.png';
 import { skills } from './data/skills';
 import SkillCard from './components/SkillCard/SkillCard';
 import { projects } from './data/projects';
@@ -84,6 +85,14 @@ function App() {
             linkHref="https://github.com/MikepdXRider"
             linkText="/MikepdXRider"
             linkAriaLabel="Opens github profile page in new tab"
+          />
+          <Contact
+            imgSrc={resumepng}
+            imgAlt="resume icon"
+            linkHref="resume.pdf"
+            linkText="Download Resume"
+            linkAriaLabel="Downloads resume"
+            isDownload
           />
         </div>
       </Section>
