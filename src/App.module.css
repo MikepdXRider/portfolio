@@ -71,3 +71,17 @@
   gap: 5vw;
   flex-wrap: wrap;
 }
+
+/* header styling */
+.header {
+  background-color: lightgray;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  height: 5vh;
+  /* opacity: 100; */
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

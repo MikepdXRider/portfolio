@@ -1,4 +1,4 @@
-/*sensible default*/
+/*sensible defaults*/
 html,
 body {
   width: 100%;
@@ -8,17 +8,17 @@ body {
   font-family: sans-serif;
 }
 
-/*sensible default*/
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 li {
   list-style: none;
+}
+
+/* nav scrolling */
+html {
+  scroll-behavior: smooth;
 }

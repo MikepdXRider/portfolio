@@ -19,7 +19,7 @@ import { connectOptions } from './data/connectOptions';
 function App() {
   return (
     <main>
-      <header>
+      <header className={styles.header}>
         <Nav navData={nav} />
       </header>
 
