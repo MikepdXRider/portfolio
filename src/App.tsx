@@ -64,7 +64,7 @@ function App() {
       </Section>
 
       <Section title={'Contact Me'} darkMode={true}>
-        <div>
+        <div className={styles.contactMeContainer}>
           <Contact
             imgSrc={gmail}
             imgAlt="email icon"
