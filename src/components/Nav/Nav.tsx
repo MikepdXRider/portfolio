@@ -17,6 +17,7 @@ export default function Nav({ navData }: NavProps) {
     <nav className={styles.nav}>
       {navData.map((linkData) => (
         <a
+          key={linkData.textContent}
           className={styles.link}
           href={linkData.href}
           aria-label={linkData.ariaLabel}

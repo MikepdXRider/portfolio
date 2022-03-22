@@ -73,7 +73,7 @@ function App() {
       <Section title={'Connect'} darkMode={true}>
         <ul className={styles.contactMeContainer}>
           {connectOptions.map((connectOption) => (
-            <li>
+            <li key={connectOption.imgAlt}>
               <ConnectOption {...connectOption} />
             </li>
           ))}
