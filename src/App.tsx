@@ -4,6 +4,8 @@ import styles from './App.module.css';
 import Section from './components/Section/Section';
 import portrait from './assets/round-portrait.png';
 import gmail from './assets/email.png';
+import linkedin from './assets/linkedin.png';
+import github from './assets/github.png';
 import { skills } from './data/skills';
 import SkillCard from './components/SkillCard/SkillCard';
 import { projects } from './data/projects';
@@ -61,13 +63,29 @@ function App() {
       </Section>
 
       <Section title={'Contact Me'} darkMode={true}>
-        <Contact
-          imgSrc={gmail}
-          imgAlt="email icon"
-          linkHref="mailto:mikepdxrider@gmail.com"
-          linkText="MikepdXRider@gmail.com"
-          linkAriaLabel="Opens Inbox or alternative email application"
-        />
+        <div>
+          <Contact
+            imgSrc={gmail}
+            imgAlt="email icon"
+            linkHref="mailto:mikepdxrider@gmail.com"
+            linkText="MikepdXRider@gmail.com"
+            linkAriaLabel="Opens Inbox or alternative email application"
+          />
+          <Contact
+            imgSrc={linkedin}
+            imgAlt="linkedin icon"
+            linkHref="https://linkedin.com/in/MichaelpdXRider"
+            linkText="/MichaelpdXRider"
+            linkAriaLabel="Opens linkedin profile page in new tab"
+          />
+          <Contact
+            imgSrc={github}
+            imgAlt="github icon"
+            linkHref="https://github.com/MikepdXRider"
+            linkText="/MikepdXRider"
+            linkAriaLabel="Opens github profile page in new tab"
+          />
+        </div>
       </Section>
     </main>
   );

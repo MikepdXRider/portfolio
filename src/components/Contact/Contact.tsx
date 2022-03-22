@@ -17,8 +17,14 @@ export default function Contact({
   linkAriaLabel,
 }: ContactProps) {
   return (
-    <article className={styles.container}>
-      <a href={linkHref} aria-label={linkAriaLabel} className={styles.link}>
+    <article>
+      <a
+        href={linkHref}
+        aria-label={linkAriaLabel}
+        className={styles.link}
+        target="_blank"
+        rel="noreferrer"
+      >
         <img src={imgSrc} alt={imgAlt} className={styles.img} />
         {linkText}
       </a>
