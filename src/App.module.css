@@ -81,7 +81,4 @@
   height: 5vh;
   /* opacity: 100; */
   z-index: 2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
