@@ -3,6 +3,7 @@ import './App.css';
 import styles from './App.module.css';
 import Section from './components/Section/Section';
 import portrait from './assets/round-portrait.png';
+import gmail from './assets/email.png';
 import { skills } from './data/skills';
 import SkillCard from './components/SkillCard/SkillCard';
 import { projects } from './data/projects';
@@ -61,10 +62,11 @@ function App() {
 
       <Section title={'Contact Me'} darkMode={true}>
         <Contact
-          imgSrc="http://placekitten.com/100/100"
-          imgAlt="cute kitten"
-          linkHref="http://placekitten.com"
-          linkAriaLabel="redirects browser to placekitten.com"
+          imgSrc={gmail}
+          imgAlt="email icon"
+          linkHref="mailto:mikepdxrider@gmail.com"
+          linkText="mikepdxrider@gmail.com"
+          linkAriaLabel="Opens Inbox or alternative email application"
         />
       </Section>
     </main>

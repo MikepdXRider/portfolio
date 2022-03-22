@@ -6,6 +6,7 @@ describe('contact component', () => {
     imgSrc: 'https://placekitten.com',
     imgAlt: 'mock alt',
     linkHref: 'https://placecage.com',
+    linkText: 'mock link text',
     linkAriaLabel: 'mock link aria-label',
   };
 

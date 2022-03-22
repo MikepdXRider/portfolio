@@ -11,7 +11,7 @@ exports[`contact component matches the existing snapshot 1`] = `
         alt="mock alt"
         src="https://placekitten.com"
       />
-      https://placecage.com
+      mock link text
     </a>
   </article>
 </div>
