@@ -1,4 +1,6 @@
+// testing
 import { render, screen } from '@testing-library/react';
+// components
 import ConnectOption from './ConnectOption';
 
 describe('ConnectOption component', () => {
