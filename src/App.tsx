@@ -63,7 +63,7 @@ function App() {
         </div>
       </Section>
 
-      <Section title={'Contact Me'} darkMode={true}>
+      <Section title={'Connect'} darkMode={true}>
         <div className={styles.contactMeContainer}>
           <Contact
             imgSrc={gmail}
