@@ -1,7 +1,8 @@
 import React from 'react';
-import styles from './Contact.module.css';
+// styles
+import styles from './ConnectOption.module.css';
 
-interface ContactProps {
+interface ConnectOptionProps {
   imgSrc: string;
   imgAlt: string;
   linkHref: string;
@@ -10,14 +11,14 @@ interface ContactProps {
   isDownload?: boolean;
 }
 
-export default function Contact({
+export default function ConnectOption({
   imgSrc,
   imgAlt,
   linkHref,
   linkText,
   linkAriaLabel,
   isDownload = false,
-}: ContactProps) {
+}: ConnectOptionProps) {
   return (
     <article>
       <a

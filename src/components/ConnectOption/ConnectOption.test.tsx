@@ -1,7 +1,9 @@
+// testing
 import { render, screen } from '@testing-library/react';
-import Contact from './Contact';
+// components
+import ConnectOption from './ConnectOption';
 
-describe('contact component', () => {
+describe('ConnectOption component', () => {
   const mockContactProps = {
     imgSrc: 'https://placekitten.com',
     imgAlt: 'mock alt',
@@ -11,19 +13,21 @@ describe('contact component', () => {
   };
 
   it('matches the existing snapshot', () => {
-    const { container } = render(<Contact {...mockContactProps} />);
+    const { container } = render(<ConnectOption {...mockContactProps} />);
 
     expect(container).toMatchSnapshot();
   });
 
   it('matches the existing snapshot WITH download attribute', () => {
-    const { container } = render(<Contact {...mockContactProps} isDownload />);
+    const { container } = render(
+      <ConnectOption {...mockContactProps} isDownload />
+    );
 
     expect(container).toMatchSnapshot();
   });
 
   it('renders component with all passed information', () => {
-    render(<Contact {...mockContactProps} />);
+    render(<ConnectOption {...mockContactProps} />);
 
     // grabs elements from rendered dom.
     const imgEl = screen.getByRole('img', { name: /mock alt/i });
@@ -37,7 +41,7 @@ describe('contact component', () => {
   });
 
   it('renders component WITH a download attribute', () => {
-    render(<Contact {...mockContactProps} isDownload />);
+    render(<ConnectOption {...mockContactProps} isDownload />);
 
     // grabs elements from rendered dom.
     const anchorEl = screen.getByLabelText(/mock link aria-label/i);
@@ -47,7 +51,7 @@ describe('contact component', () => {
   });
 
   it('renders component WITHOUT a download attribute', () => {
-    render(<Contact {...mockContactProps} />);
+    render(<ConnectOption {...mockContactProps} />);
 
     // grabs elements from rendered dom.
     const anchorEl = screen.getByLabelText(/mock link aria-label/i);

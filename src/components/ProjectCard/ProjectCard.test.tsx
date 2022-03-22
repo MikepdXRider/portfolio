@@ -1,4 +1,6 @@
+// testing
 import { render, screen } from '@testing-library/react';
+// components
 import ProjectCard from './ProjectCard';
 
 describe('ProjectCard component', () => {

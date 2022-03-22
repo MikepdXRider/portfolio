@@ -1,4 +1,5 @@
 import React from 'react';
+// styles
 import styles from './section.module.css';
 import '../../App.css';
 
@@ -19,6 +20,7 @@ export default function Section({
       className={`${
         darkMode ? styles.darkModeSection : styles.lightModeSection
       } ${title ? styles.sectionWithTitle : styles.section}`}
+      id={title}
     >
       {title && (
         <article className={styles.titleContainer}>

@@ -1,21 +1,28 @@
 import React from 'react';
+// styles
 import './App.css';
 import styles from './App.module.css';
+// components
+import ConnectOption from './components/ConnectOption/ConnectOption';
 import Section from './components/Section/Section';
-import portrait from './assets/round-portrait.png';
-import gmail from './assets/email.png';
-import linkedin from './assets/linkedin.png';
-import github from './assets/github.png';
-import resumepng from './assets/resume.png';
-import { skills } from './data/skills';
 import SkillCard from './components/SkillCard/SkillCard';
-import { projects } from './data/projects';
 import ProjectCard from './components/ProjectCard/ProjectCard';
-import Contact from './components/Contact/Contact';
+import Nav from './components/Nav/Nav';
+// assets
+import portrait from './assets/round-portrait.png';
+// data
+import { skills } from './data/skills';
+import { projects } from './data/projects';
+import { nav } from './data/nav';
+import { connectOptions } from './data/connectOptions';
 
 function App() {
   return (
     <main>
+      <header className={styles.header}>
+        <Nav navData={nav} />
+      </header>
+
       {/* hero section */}
       <Section darkMode={true}>
         <div className={styles.heroContainer}>
@@ -63,38 +70,14 @@ function App() {
         </div>
       </Section>
 
-      <Section title={'Contact Me'} darkMode={true}>
-        <div className={styles.contactMeContainer}>
-          <Contact
-            imgSrc={gmail}
-            imgAlt="email icon"
-            linkHref="mailto:mikepdxrider@gmail.com"
-            linkText="MikepdXRider@gmail.com"
-            linkAriaLabel="Opens Inbox or alternative email application"
-          />
-          <Contact
-            imgSrc={linkedin}
-            imgAlt="linkedin icon"
-            linkHref="https://linkedin.com/in/MikepdXRider"
-            linkText="/MichaelpdXRider"
-            linkAriaLabel="Opens linkedin profile page in new tab"
-          />
-          <Contact
-            imgSrc={github}
-            imgAlt="github icon"
-            linkHref="https://github.com/MikepdXRider"
-            linkText="/MikepdXRider"
-            linkAriaLabel="Opens github profile page in new tab"
-          />
-          <Contact
-            imgSrc={resumepng}
-            imgAlt="resume icon"
-            linkHref="Michael_Rider_Resume.pdf"
-            linkText="Download Resume"
-            linkAriaLabel="Downloads resume"
-            isDownload
-          />
-        </div>
+      <Section title={'Connect'} darkMode={true}>
+        <ul className={styles.contactMeContainer}>
+          {connectOptions.map((connectOption) => (
+            <li key={connectOption.imgAlt}>
+              <ConnectOption {...connectOption} />
+            </li>
+          ))}
+        </ul>
       </Section>
     </main>
   );

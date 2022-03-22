@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Nav component matches the existing snapshot 1`] = `
+<div>
+  <nav
+    class="nav"
+  >
+    <a
+      aria-label="mock aria label 1"
+      class="link"
+      href="mock href 1"
+    >
+      mock text content 1
+    </a>
+    <a
+      aria-label="mock aria label 2"
+      class="link"
+      href="mock href 2"
+    >
+      mock text content 2
+    </a>
+  </nav>
+</div>
+`;
