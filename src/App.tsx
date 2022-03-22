@@ -89,7 +89,7 @@ function App() {
           <Contact
             imgSrc={resumepng}
             imgAlt="resume icon"
-            linkHref="resume.pdf"
+            linkHref="Michael_Rider_Resume.pdf"
             linkText="Download Resume"
             linkAriaLabel="Downloads resume"
             isDownload
