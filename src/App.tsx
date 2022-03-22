@@ -3,7 +3,7 @@ import React from 'react';
 import './App.css';
 import styles from './App.module.css';
 // components
-import Contact from './components/Contact/Contact';
+import ConnectOption from './components/ConnectOption/ConnectOption';
 import Section from './components/Section/Section';
 import SkillCard from './components/SkillCard/SkillCard';
 import ProjectCard from './components/ProjectCard/ProjectCard';
@@ -75,28 +75,28 @@ function App() {
 
       <Section title={'Connect'} darkMode={true}>
         <div className={styles.contactMeContainer}>
-          <Contact
+          <ConnectOption
             imgSrc={gmail}
             imgAlt="email icon"
             linkHref="mailto:mikepdxrider@gmail.com"
             linkText="MikepdXRider@gmail.com"
             linkAriaLabel="Opens Inbox or alternative email application"
           />
-          <Contact
+          <ConnectOption
             imgSrc={linkedin}
             imgAlt="linkedin icon"
             linkHref="https://linkedin.com/in/MikepdXRider"
             linkText="/MichaelpdXRider"
             linkAriaLabel="Opens linkedin profile page in new tab"
           />
-          <Contact
+          <ConnectOption
             imgSrc={github}
             imgAlt="github icon"
             linkHref="https://github.com/MikepdXRider"
             linkText="/MikepdXRider"
             linkAriaLabel="Opens github profile page in new tab"
           />
-          <Contact
+          <ConnectOption
             imgSrc={resumepng}
             imgAlt="resume icon"
             linkHref="Michael_Rider_Resume.pdf"
