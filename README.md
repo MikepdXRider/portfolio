@@ -21,7 +21,7 @@ A site to highlight my favorite software development projects and practice using
 | ----------------------- | ----------------------------------------------------------- |
 | Github & LinkedIn Icons | [riajulislam](https://www.flaticon.com/authors/riajulislam) |
 | Email Icon              | [Uniconlabs](https://www.flaticon.com/authors/uniconlabs)   |
-| Resume/CV Icon          | [TBD]()                                                     |
+| Resume/CV Icon          | [rukanicon](https://www.flaticon.com/authors/rukanicon)     |
 
 ## Initial Mock
 
