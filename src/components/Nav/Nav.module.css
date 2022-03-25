@@ -1,3 +1,14 @@
+:root {
+  /* alternative: 36px */
+  --sectiontitlefont: 2.25rem;
+  /* alternative: 24px */
+  --cardtitlefont: 1.5rem;
+  /* alternative: 20px */
+  --standardfont: 1.25rem;
+  /* alternative: 16px */
+  --mobilelinkfont: 1rem;
+}
+
 .nav {
   height: 100%;
   width: 100%;
@@ -9,6 +20,12 @@
 
 .link {
   color: darkslategray;
-  font-size: 20px;
+  font-size: var(--standardfont);
   text-decoration: none;
+}
+
+@media screen and (max-width: 400px) {
+  .link {
+    font-size: var(--mobilelinkfont);
+  }
 }
