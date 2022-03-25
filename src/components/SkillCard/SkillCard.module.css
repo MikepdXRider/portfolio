@@ -7,6 +7,12 @@
   --black: #000000;
   /* alternatives: hsl(90,58%,56%) | rgb(143,209,79)*/
   --accentgreen: #8fd14f;
+  /* alternative: 36px */
+  --sectiontitlefont: 2.25rem;
+  /* alternative: 24px */
+  --cardtitlefont: 1.5rem;
+  /* alternative: 20px */
+  --standardfont: 1.25rem;
 }
 
 .card {
@@ -28,7 +34,7 @@
   text-decoration: underline;
   text-decoration-color: var(--accentgreen);
   text-decoration-thickness: 3px;
-  font-size: 24px;
+  font-size: var(--cardtitlefont);
   margin-bottom: 5px;
 }
 
@@ -37,6 +43,6 @@
 }
 
 .contentListItem {
-  font-size: 20px;
+  font-size: var(--standardfont);
   margin-top: 5px;
 }
